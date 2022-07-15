@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #c5e4e7;
+}
+
+.logo {
+  margin: 100px 0 0 650px;
+}
+
+.container {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 890px;
+  border-radius: 20px;
+  margin: 50px 0 0 270px;
+}
+
+.left {
+  padding: 30px;
+}
+
+.left .bill-input p {
+  color: #7f9c9f;
+  margin-bottom: 10px;
+}
+
+.left .bill-input input {
+  border: none;
+  background-color: #f4fafa;
+  width: 390px;
+  height: 55px;
+  padding: 0 10px 0 0;
+  border-radius: 10px;
+  text-align: right;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Space Mono', monospacer;
+}
+
+.left .bill-input .dollar {
+  font-size: 30px;
+  color: #7f9c9f;
+  margin: -50px 0 70px 20px;
+}
+
+.left .tip {
+  margin: 0 0 20px 0;
+}
+
+.left .tip p {
+  color: #7f9c9f;
+}
+
+.left .tip .top, .left .tip .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left .tip .top .active-tip, .left .tip .bottom .active-tip {
+  background-color: #26c0ab;
+}
+
+.left .tip .top p, .left .tip .bottom p {
+  color: white;
+  background-color: #00494d;
+  margin: 10px 20px 10px 0;
+  width: 110px;
+  padding: 13px 0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.left .tip .top #custom, .left .tip .bottom #custom {
+  color: #00494d;
+  font-weight: 600;
+  border: none;
+  font-size: 20px;
+  background-color: #f4fafa;
+  margin: 10px 20px 10px 0;
+  width: 110px;
+  padding: 13px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Space Mono', monospacer;
+}
+
+.left .people-input {
+  position: relative;
+}
+
+.left .people-input p {
+  color: #7f9c9f;
+  margin-bottom: 10px;
+}
+
+.left .people-input input {
+  border: none;
+  background-color: #f4fafa;
+  width: 390px;
+  height: 55px;
+  padding: 0 10px 0 0;
+  text-align: right;
+  border-radius: 10px;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Space Mono', monospacer;
+}
+
+.left .people-input img {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+.right {
+  width: 410px;
+  margin: 30px 0;
+  padding: 40px 30px;
+  border-radius: 10px;
+  background-color: #00494d;
+}
+
+.right .tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.right .tip-amount .big {
+  color: #c5e4e7;
+}
+
+.right .tip-amount .small {
+  color: #7f9c9f;
+}
+
+.right .tip-amount h1 {
+  color: #26c0ab;
+  font-size: 40px;
+}
+
+.right .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.right .total .big {
+  color: #c5e4e7;
+}
+
+.right .total .small {
+  color: #7f9c9f;
+}
+
+.right .total h1 {
+  color: #26c0ab;
+  font-size: 40px;
+}
+
+.right #reset {
+  background-color: #26c0ab;
+  text-align: center;
+  padding: 13px 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  .logo {
+    margin: 50px 0 50px 150px;
+  }
+  .container {
+    display: block;
+    width: 425px;
+    margin: 0;
+    padding-bottom: 40px;
+    border-radius: 20px 20px 0 0;
+  }
+  .left .bill-input input, .left .people-input input {
+    width: 365px;
+  }
+  .left .tip {
+    margin: 0 0 40px 0;
+  }
+  .left .tip p {
+    margin-bottom: 20px;
+  }
+  .left .tip .top, .left .tip .bottom {
+    display: block;
+  }
+  .left .tip .top p, .left .tip .bottom p {
+    width: 170px;
+    font-size: 20px;
+  }
+  .left .tip .top #custom, .left .tip .bottom #custom {
+    width: 170px;
+    position: absolute;
+    right: 10px;
+    top: 510px;
+  }
+  .left .tip .two {
+    position: absolute;
+    right: 10px;
+    top: 380px;
+  }
+  .left .tip .four {
+    position: absolute;
+    right: 10px;
+    top: 445px;
+  }
+  .right {
+    width: 370px;
+    margin: 0 0 0 27px;
+  }
+  .right .tip-amount {
+    margin-bottom: 20px;
+  }
+  .right .total {
+    margin-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

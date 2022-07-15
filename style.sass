@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap')
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+$Strongcyan: hsl(172, 67%, 45%)
+$Verydarkcyan: hsl(183, 100%, 15%)
+$Darkgrayishcyan: hsl(186, 14%, 43%)
+$Grayishcyan: hsl(184, 14%, 56%)
+$Lightgrayishcyan: hsl(185, 41%, 84%)
+$Verylightgrayishcyan: hsl(189, 41%, 97%)
+$White: hsl(0, 0%, 100%)
+
+body
+    font-family: 'Space Mono', monospace
+    background-color: $Lightgrayishcyan
+
+.logo
+    margin: 100px 0 0 650px
+    
+.container
+    background-color: $White
+    display: flex
+    width: 890px
+    border-radius: 20px
+    margin: 50px 0 0 270px 
+
+.left
+    padding: 30px
+
+    .bill-input
+        p
+            color: $Grayishcyan
+            margin-bottom: 10px
+        input
+            border: none
+            background-color: $Verylightgrayishcyan
+            width: 390px
+            height: 55px
+            padding: 0 10px 0 0
+            border-radius: 10px
+            text-align: right
+            color: $Verydarkcyan
+            font-weight: 700
+            font-size: 25px
+            font-family: 'Libre Franklin', sans-serif
+            font-family: 'Poppins', sans-serif
+            font-family: 'Rubik', sans-serif
+            font-family: 'Space Mono', monospacer
+        .dollar
+            font-size: 30px
+            color: $Grayishcyan
+            margin: -50px 0 70px 20px
+
+    .tip
+        margin: 0 0 20px 0
+        p
+            color: $Grayishcyan
+        .top,.bottom
+            display: flex
+
+            .active-tip
+                background-color: $Strongcyan
+            p
+                color: $White
+                background-color: $Verydarkcyan
+                margin: 10px 20px 10px 0
+                width: 110px
+                padding: 13px 0
+                border-radius: 10px
+                text-align: center
+            #custom
+                color: $Verydarkcyan
+                font-weight: 600
+                border: none
+                font-size: 20px
+                background-color: $Verylightgrayishcyan
+                margin: 10px 20px 10px 0
+                width: 110px
+                padding: 13px 0
+                border-radius: 10px
+                text-align: center
+                font-family: 'Libre Franklin', sans-serif
+                font-family: 'Poppins', sans-serif
+                font-family: 'Rubik', sans-serif
+                font-family: 'Space Mono', monospacer
+
+    .people-input
+        position: relative
+        p
+            color: $Grayishcyan
+            margin-bottom: 10px
+        input
+            border: none
+            background-color: $Verylightgrayishcyan
+            width: 390px
+            height: 55px
+            padding: 0 10px 0 0
+            text-align: right
+            border-radius: 10px
+            color: $Verydarkcyan
+            font-weight: 700
+            font-size: 25px
+            font-family: 'Libre Franklin', sans-serif
+            font-family: 'Poppins', sans-serif
+            font-family: 'Rubik', sans-serif
+            font-family: 'Space Mono', monospacer
+        img
+            position: absolute
+            left: 20px
+            top: 50px
+
+        
+.right
+    width: 410px
+    margin: 30px 0
+    padding: 40px 30px
+    border-radius: 10px
+    background-color: $Verydarkcyan
+    .tip-amount
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+        .big
+            color: $Lightgrayishcyan
+        .small
+            color: $Grayishcyan
+        h1
+            color: $Strongcyan
+            font-size: 40px
+
+    .total
+        display: flex
+        justify-content: space-between
+        margin-bottom: 120px
+        .big
+            color: $Lightgrayishcyan
+        .small
+            color: $Grayishcyan
+        h1
+            color: $Strongcyan
+            font-size: 40px
+
+    #reset
+        background-color: $Strongcyan
+        text-align: center
+        padding: 13px 0
+        border-radius: 7px
+        cursor: pointer
+
+@media screen and (max-width:425px)
+
+    .logo
+        margin: 50px 0 50px 150px
+
+    .container
+        display: block
+        width: 425px
+        margin: 0
+        padding-bottom: 40px
+        border-radius: 20px 20px 0 0
+
+    .left
+        .bill-input,.people-input
+            input
+                width: 365px
+        .tip
+            margin: 0 0 40px 0
+            p
+                margin-bottom: 20px
+            .top,.bottom
+                display: block
+                p
+                    width: 170px
+                    font-size: 20px
+                #custom
+                    width: 170px
+                    position: absolute
+                    right: 10px
+                    top: 510px
+            .two
+                position: absolute
+                right: 10px
+                top: 380px
+
+            .four
+                position: absolute
+                right: 10px
+                top: 445px
+                
+    .right
+        width: 370px
+        margin: 0 0 0 27px
+        .tip-amount
+            margin-bottom: 20px
+        .total
+            margin-bottom: 40px
